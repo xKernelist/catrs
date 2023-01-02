@@ -1,6 +1,7 @@
 use structopt::StructOpt;
 use std::fs::File;
 use std::path::PathBuf;
+use std::io::Read;
 
 #[derive(StructOpt)]
 #[structopt(name = "catrs")]
