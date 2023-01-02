@@ -1,6 +1,5 @@
 use structopt::StructOpt;
 use std::fs::File;
-use std::io::prelude::*;
 use std::path::PathBuf;
 
 #[derive(StructOpt)]
