@@ -1,13 +1,13 @@
-use structopt::StructOpt;
+use structopt::StructOpt; // command argument parser
 use std::fs::File;
 use std::path::PathBuf;
-use std::io::Read;
+use std::io::Read; // when i dont add this, compiler giving an error on windows
 
 #[derive(StructOpt)]
-#[structopt(name = "catrs")]
+#[structopt(name = "catrs")] // declaring what is the command
 struct Cat {
     #[structopt(name = "FILE", parse(from_os_str))]
-    files: Vec<PathBuf>,
+    files: Vec<PathBuf>, // creating a vector for multiple file choices
 }
 
 fn main() {
