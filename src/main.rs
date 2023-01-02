@@ -1,4 +1,4 @@
-use structopt::StructOpt; // command argument parser
+use structopt::StructOpt; // command line argument parser
 use std::fs::File;
 use std::path::PathBuf;
 use std::io::Read; // when i dont add this, compiler giving an error on Windows
